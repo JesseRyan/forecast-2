@@ -1,0 +1,7 @@
+<div class='city'>
+	<h1>{{ info.name }}</h1>
+	<h2>5-day forecast</h2>
+	<div class='five-day' ng-repeat="forecast in forecasts">
+	  <fiveday-forecast info="forecast" ></fiveday-forecast>
+	 </div>
+</div>

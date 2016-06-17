@@ -1,0 +1,14 @@
+<div class="day row">
+	<div class="weekday col-xs-3">
+		<p>{{ info.time * 1000 | date : 'EEE' }}</p>
+	</div>
+	<div class="weather col-xs-3">
+		<img ng-src="img/{{ info.icon }}.gif"> 
+	</div>
+	<div class="high col-xs-3">
+		<p>{{ info.temperatureMax | number }}&deg;</p>
+	</div>
+	<div class="low col-xs-3">
+		<p>{{ info.temperatureMin | number }}&deg;</p>
+	</div>
+</div>
